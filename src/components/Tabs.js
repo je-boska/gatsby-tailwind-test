@@ -7,19 +7,25 @@ const Tabs = () => {
     <div className='mt-8 w-full flex justify-center text-2xl'>
       <div className='grid grid-cols-3 max-w-3xl m-8'>
         <div
-          className='p-4 border-2 flex justify-center cursor-pointer hover:bg-gray-200'
+          className={`p-4 border-2 flex justify-center cursor-pointer hover:bg-gray-200 transition-all ${
+            tab == 1 && 'bg-gray-200'
+          }`}
           onClick={() => setTab(1)}
         >
           <span>1</span>
         </div>
         <div
-          className='p-4 border-t-2 border-b-2 flex justify-center cursor-pointer hover:bg-gray-200'
+          className={`p-4 border-t-2 border-b-2 flex justify-center cursor-pointer hover:bg-gray-200 transition-all ${
+            tab == 2 && 'bg-gray-200'
+          }`}
           onClick={() => setTab(2)}
         >
           <span>2</span>
         </div>
         <div
-          className='p-4 border-2 flex justify-center cursor-pointer hover:bg-gray-200'
+          className={`p-4 border-2 flex justify-center cursor-pointer hover:bg-gray-200 transition-all ${
+            tab == 3 && 'bg-gray-200'
+          }`}
           onClick={() => setTab(3)}
         >
           <span>3</span>
