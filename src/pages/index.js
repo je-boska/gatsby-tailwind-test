@@ -1,10 +1,11 @@
 import * as React from 'react'
 import '../components/global.css'
+import Navbar from '../components/Navbar'
 
 const IndexPage = () => {
   return (
     <main>
-      <h1 className='m-8'>Testing...</h1>
+      <Navbar />
     </main>
   )
 }
