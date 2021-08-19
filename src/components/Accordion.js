@@ -21,7 +21,7 @@ const Accordion = () => {
           <h1 className='font-semibold text-xl'>Lorem ipsum</h1>
           <p
             className={`h-0 transition-all overflow-hidden ${
-              tab === 1 && 'h-auto mt-4'
+              tab === 1 && 'h-auto mt-2'
             }`}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -40,7 +40,7 @@ const Accordion = () => {
           <h1 className='font-semibold text-xl'>Sed ut perspiciatis</h1>
           <p
             className={`h-0 transition-all overflow-hidden ${
-              tab === 2 && 'h-auto mt-4'
+              tab === 2 && 'h-auto mt-2'
             }`}
           >
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -59,7 +59,7 @@ const Accordion = () => {
           <h1 className='font-semibold text-xl'>But I must explain</h1>
           <p
             className={`h-0 transition-all overflow-hidden ${
-              tab === 3 && 'h-auto mt-4'
+              tab === 3 && 'h-auto mt-2'
             }`}
           >
             But I must explain to you how all this mistaken idea of denouncing
