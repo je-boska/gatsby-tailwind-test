@@ -4,7 +4,7 @@ const Tabs = () => {
   const [tab, setTab] = useState(1)
 
   return (
-    <div className='mt-16 px-8 w-full flex justify-center text-2xl'>
+    <div className='mt-16 px-8 w-full flex justify-center'>
       <div className='grid grid-cols-3 max-w-3xl'>
         <div
           className={`p-4 border-2 rounded-tl-xl flex justify-center cursor-pointer hover:bg-gray-200 transition-all ${
@@ -15,7 +15,7 @@ const Tabs = () => {
           role='tab'
           tabIndex={0}
         >
-          <span className='font-semibold'>1</span>
+          <span className='font-semibold text-xl'>1</span>
         </div>
         <div
           className={`p-4 border-t-2 border-b-2 flex justify-center cursor-pointer hover:bg-gray-200 transition-all ${
@@ -26,7 +26,7 @@ const Tabs = () => {
           role='tab'
           tabIndex={0}
         >
-          <span className='font-semibold'>2</span>
+          <span className='font-semibold text-xl'>2</span>
         </div>
         <div
           className={`p-4 border-2 rounded-tr-xl flex justify-center cursor-pointer hover:bg-gray-200 transition-all ${
@@ -37,7 +37,7 @@ const Tabs = () => {
           role='tab'
           tabIndex={0}
         >
-          <span className='font-semibold'>3</span>
+          <span className='font-semibold text-xl'>3</span>
         </div>
         {tab === 1 && (
           <div className='col-span-3 border-2 border-t-0 p-6 rounded-b-xl'>
