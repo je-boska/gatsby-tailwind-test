@@ -8,7 +8,7 @@ const Feature = () => {
         <br />
         Anything
       </div>
-      <div className='p-8 text-2xl border-2 rounded-xl'>
+      <div className='p-8 text-2xl rounded-xl'>
         Our product comes with everything you need to build your whatever you
         want. Use our product's pallets to easily create what you want, or craft
         your own custom logic. Either way, we make building whatever you want
