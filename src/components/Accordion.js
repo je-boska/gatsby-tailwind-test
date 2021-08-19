@@ -12,10 +12,10 @@ const Accordion = () => {
   }
 
   return (
-    <div className='mt-16 px-8 max-w-2xl mx-auto'>
+    <div className='mt-16 max-w-3xl mx-auto md:border-r-2 md:border-l-2'>
       <div
         onClick={() => toggleTab(1)}
-        className='px-8 py-4 border-2 flex justify-between cursor-pointer'
+        className='px-8 py-4 border-t-2 border-b-2 flex justify-between cursor-pointer'
       >
         <div>
           <h1 className='font-semibold text-xl'>Lorem ipsum</h1>
@@ -34,7 +34,7 @@ const Accordion = () => {
       </div>
       <div
         onClick={() => toggleTab(2)}
-        className='px-8 py-4 max-w-2xl border-2 border-t-0 flex justify-between cursor-pointer'
+        className='px-8 py-4 border-b-2 border-t-0 flex justify-between cursor-pointer'
       >
         <div>
           <h1 className='font-semibold text-xl'>Sed ut perspiciatis</h1>
@@ -47,6 +47,25 @@ const Accordion = () => {
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
             quae ab illo inventore veritatis et quasi architecto beatae vitae
             dicta sunt explicabo.
+          </p>
+        </div>
+        <div className='font-semibold text-xl'>+</div>
+      </div>
+      <div
+        onClick={() => toggleTab(3)}
+        className='px-8 py-4 border-b-2 border-t-0 flex justify-between cursor-pointer'
+      >
+        <div>
+          <h1 className='font-semibold text-xl'>But I must explain</h1>
+          <p
+            className={`h-0 transition-all overflow-hidden ${
+              tab === 3 && 'h-auto mt-4'
+            }`}
+          >
+            But I must explain to you how all this mistaken idea of denouncing
+            pleasure and praising pain was born and I will give you a complete
+            account of the system, and expound the actual teachings of the great
+            explorer of the truth, the master-builder of human happiness.
           </p>
         </div>
         <div className='font-semibold text-xl'>+</div>
