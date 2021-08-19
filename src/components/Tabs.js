@@ -4,8 +4,8 @@ const Tabs = () => {
   const [tab, setTab] = useState(1)
 
   return (
-    <div className='mt-16 md:px-8 w-full flex justify-center'>
-      <div className='grid grid-cols-3 max-w-3xl'>
+    <div className='mt-16 mx-auto max-w-3xl w-full flex justify-center'>
+      <div className='grid grid-cols-3'>
         <div
           className={`p-4 border-2 md:rounded-tl-xl flex justify-center cursor-pointer hover:bg-gray-200 transition-all ${
             tab === 1 && 'bg-gray-100'
